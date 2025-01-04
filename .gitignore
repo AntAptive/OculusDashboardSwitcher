@@ -1,0 +1,18 @@
+# Build outputs
+bin/
+obj/
+publish/
+
+# User-specific
+*.csproj.user
+
+# IDE
+.vs/
+
+# Temporary files
+*.pfx
+*.tmp
+
+# Auto-generated files
+*.vspscc
+*.vssscc
