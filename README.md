@@ -9,7 +9,7 @@ A tool to quickly swap between Oculus dashboards and OpenXR runtimes for those u
 2. Download [Oculus Killer](https://github.com/BnuuySolutions/OculusKiller) and place the executable in `C:\Program Files\Oculus\Support\oculus-dash\dash\bin` with the name `OculusDash.exe.bak`. **DO NOT replace the original `OculusDash.exe` file.** (see below if you've changed the Oculus install location)
     * If you have already downloaded Oculus Killer but replaced the original dashboard executable file entirely, you will likely need to reinstall Oculus. If you have backed the original up, ensure it has the name `OculusDash.exe.bak`
 3. Open Oculus Dashboard Switcher and you will be shown a UAC (User Account Control) prompt. Click Yes.
-    * ⚠️ **This tool requires elevated permissions to handle files in protected locations**, such as the Oculus install location.
+    * ⚠️ **This tool requires elevated permissions to handle files in protected locations**, such as the Oculus install location. **This tool also includes the ability to change the active OpenXR runtime, which involves modifying certain Windows registry keys.**
 4. Oculus Dashboard Switcher will tell you what dashboard is currently active (based on file size) before switching.
     * **NOTE:** Oculus Dashboard Switcher will refer to Oculus Killer as the "bypasser" dashboard.
 5. Click Yes and Oculus Dashboard Switcher will swap the files `OculusDash.exe` and `OculusDash.exe.bak` with each other.
