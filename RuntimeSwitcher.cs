@@ -33,7 +33,7 @@ namespace OculusDashboardSwitcher
             }
         }
 
-        public void SetOpenXRToOculus(string manifestPath)
+        public void SetOpenXRRuntime(string manifestPath)
         {
             try
             {
@@ -49,23 +49,6 @@ namespace OculusDashboardSwitcher
                 Environment.Exit(1);
             }
             
-        }
-
-        public void SetOpenXRToSteamVR(string manifestPath)
-        {
-            try
-            {
-                // Set 64 bit key
-                using (var key = Registry.LocalMachine.OpenSubKey(OpenXR64BitRegistryKey, true))
-                {
-                    key?.SetValue(ActiveRuntimeValue, manifestPath, RegistryValueKind.String);
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Failed to swap OpenXR runtimes.\n" + ex.Message, "Oculus Dashboard Switcher", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                Environment.Exit(1);
-            }
         }
     }
 }

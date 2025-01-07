@@ -154,8 +154,6 @@ namespace OculusDashboardSwitcher
 
                     RuntimeSwitcher runtimeSwitcher = new RuntimeSwitcher();
 
-                   
-
                     // Only ask to swap OpenXR runtime if it's not already set
                     if (
                         (newActiveDash == "Original" && runtimeSwitcher.GetCurrent64BitRuntime().ToLower().Contains("steam")) ||
@@ -178,11 +176,11 @@ namespace OculusDashboardSwitcher
                         {
                             // If original, set Oculus as OpenXR Runtime
                             if (newActiveDash == "Original")
-                                runtimeSwitcher.SetOpenXRToOculus(oculusOpenXRManifest);
+                                runtimeSwitcher.SetOpenXRRuntime(oculusOpenXRManifest);
 
                             // If bypasser, set SteamVR as OpenXR Runtime
                             else if (newActiveDash == "Bypasser")
-                                runtimeSwitcher.SetOpenXRToSteamVR(steamOpenXRManifest);
+                                runtimeSwitcher.SetOpenXRRuntime(steamOpenXRManifest);
 
                             // Show success message if we got this far
                             PlayTaDaSound();
