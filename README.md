@@ -2,7 +2,8 @@
 A tool to quickly swap between Oculus dashboards and OpenXR runtimes for those using [Oculus Killer](https://github.com/BnuuySolutions/OculusKiller) by [Bnuuy Solutions](https://github.com/BnuuySolutions) on Windows.
 
 ## ⚠️FOR THOSE COMING FROM ANTAPTIVE'S VR OPTIMIZATION TUTORIAL⚠️
-**The usage of Oculus Dashboard Switcher has changed. Please see below for proper usage information.**
+**The usage of Oculus Dashboard Switcher has changed. Please see below for proper usage information.**<br>
+Here's an updated tutorial for how to set custom install locations: https://www.youtube.com/watch?v=Y1KVjFAje3c
 
 ## Usage
 1. Enable "File name extensions" in File Explorer. Tutorials: [Windows 10](https://www.youtube.com/watch?v=PoTah9YBG2Y) | [Windows 11](https://www.youtube.com/watch?v=z5FBLAagPIc)
@@ -16,6 +17,7 @@ A tool to quickly swap between Oculus dashboards and OpenXR runtimes for those u
 6. If the switch is successful, you will be given the option to swap the active OpenXR runtime to the dashboard's corresponding runtime.
 
 ## Custom Oculus or Steam Install Location
+### Confused? Here's a tutorial: https://www.youtube.com/watch?v=Y1KVjFAje3c
 
 ### Oculus
 By default, the tool will look for the following directory:<br>
